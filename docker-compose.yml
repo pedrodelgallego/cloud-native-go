@@ -1,0 +1,9 @@
+version: "2"
+services:
+  microservice:
+    build: .
+    image: cloud-native-go/books
+    environment:
+      - PORT=8080
+    ports:
+      - 8001:8080
