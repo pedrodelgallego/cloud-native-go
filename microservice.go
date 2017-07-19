@@ -30,7 +30,7 @@ func port() string {
 
 func index(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	fmt.Fprintf(w, "Hello cloud native go")
+	fmt.Fprintf(w, "Hello cloud native go (version 0.0.2)")
 }
 
 func echo(w http.ResponseWriter, r *http.Request) {
